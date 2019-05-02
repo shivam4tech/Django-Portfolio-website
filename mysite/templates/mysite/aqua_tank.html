@@ -1,0 +1,60 @@
+{% extends 'mysite/base.html' %}
+
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+            <h3 class="display-4">Aqua Tank</h3>
+            <p class="lead"></p>
+            <hr class="my-4">
+            <h6>This project got funded from NEWGEN IEDC(Innovation and Entrepreneurship Division Cell of Government of India</h6>
+            <p>AQUA TANK brings in automation of tanks containing liquids ranging from water to any inflammable liquid
+                like gasoline or toxic chemicals. With the help of this invention a ground breaking step is taken
+                towards monitoring and operating industrial and household tanks. We are looking at a future full of
+                smart devices and smart cities. In the quest of making gadgets smarter we bring forward our invention
+                i.e. AQUA TANK. Fluid tank industry is quite stagnant over the years. With our device these tanks will
+                get smarter and also remove a ton load of burden from users hence making household and industries
+                smarter.
+            </p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>
+                    <h4>Features of AQUA TANK are:</h4><br>
+                    <ul>
+                        <li>Non-physical contact mechanism</li>
+                        <li>Saves water by preventing overflows rather than detecting overflows</li>
+                        <li>Easy to install</li>
+                        <li>Cost equivalent to overflow alarms but provides way more functionality</li>
+                        <li>Reduces effort of refilling tanks on constant basis</li>
+                    </ul>
+                    </p>
+                    <h4>Anatomy of AQUA TANK</h4>
+                    <p>The major technical components are:</p>
+                    <ul>
+                        <li>Arduino Uno</li>
+                        <li>Relay</li>
+                        <li>Atmega 328p</li>
+                        <li>Ultrasonic Wave Generator</li>
+                        <li>9V Battery</li>
+                    </ul>
+
+                    <a class="btn btn-secondary btn-lg" href="https://github.com/shivam4tech/aqua_tank" role="button">Check out
+                        code on Github</a>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <img src="{% static 'mysite/images/aqua_tank_diag1.jpg' %}" width="500px" height="300px">
+                    </div>
+                    <div class="row">
+                        <img src="{% static 'mysite/images/aqua_tank_diag2.jpg' %}" width="500px" height="250px">
+                    </div>
+                    <h6>Fig.-Basic Flow diagram of components of Aqua Tank</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

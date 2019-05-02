@@ -1,0 +1,67 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container" style="margin-top: 80px">
+        <div class="card-deck">
+            <div class="card">
+
+                <img class="card-img-top" src="{% static 'mysite/videos/image2.gif' %}" width="100px" height="280px" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Aqua Tank</h5>
+                    <p class="card-text">
+                        An IOT based project funded by Department of Science and Technology, Government of India
+
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted"><a href="{% url 'aqua_tank' %}">Know More</a></small>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="{% static 'mysite/images/door_unlock.png' %}"  alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Smart Door Unlocking System</h5>
+                    <p class="card-text">
+                        In this project, I have implemented a smartphone-controlled, internet-connected door powered by a Raspberry Pi
+                        that can be added onto an existing door lock without any modifications to the door.
+
+
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted"><a href="{% url 'door_unlock' %}">Know More</a> </small>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="{% static 'mysite/images/non_paid.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Read a few articles written by me!</h5>
+                    <p class="card-text">
+                    <ul>
+                        <li>
+                            <a href="https://thenonpaidmedia.com/why-most-electronic-devices-are-made-in-china/">
+                                Why most electronic device are made in China?
+                            </a>
+                        </li>
+                        <a href="https://thenonpaidmedia.com/why-most-electronic-devices-are-made-in-china/">
+                            Why most electronic device are made in China?
+                        </a>
+                        <li>
+                            <a href="https://thenonpaidmedia.com/how-to-begin-learning-computer-programming/">
+                                How to begin learning computer programming?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://thenonpaidmedia.com/the-next-g-in-technology/">
+                                The Next ‘G’ in Technology!
+                            </a>
+                        </li>
+                    </ul>
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,57 @@
+{% extends 'mysite/base.html' %}
+
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+            <h3 class="display-4">Smart Door Unlocking System</h3>
+            <p class="lead"></p>
+            <hr class="my-4">
+            <p>In this project, I will show how to make a smartphone-controlled, internet-connected door
+                powered by a Raspberry Pi that can be added onto your existing door lock without any
+                modifications to the door. The door lock can be controlled by multiple smartphones, and even
+                notify you whenever someone locks/unlocks the door. All of this is done using a simple,
+                drag-and-drop app builder which makes building your own Internet of Things (IoT) app
+                easier than ever. For an extra impressive door lock, we&#39;ll also show you how to add a simple
+                LED light to indicate if the door is locked, and a push-button to operate the lock manually.
+            </p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>
+                    <h4>This project will include the following modules</h4><br>
+                    <ul>
+                        <li>User Login</li>
+                        <li>Camera and finger print</li>
+                        <li>Detection</li>
+                        <li>Lock/Unlock</li>
+                        <li>Live Feed</li>
+                        <li>E-Mail</li>
+                    </ul>
+                    </p>
+                    <h4>Hardware Requirements</h4>
+                    <ul>
+                        <li>Raspberry pi 3 model B</li>
+                        <li>Raspberry pi 3 Camera module</li>
+                        <li>Servo Motor</li>
+                        <li>Finger Print Scanner</li>
+                    </ul>
+                    <h4>Software Requirements</h4>
+                    <ul>
+                        <li>Open CV</li>
+                        <li>Putty</li>
+                        <li>Raspbian Os</li>
+                    </ul>
+                    <a class="btn btn-secondary btn-lg" href="https://github.com/shivam4tech/Smart-Door-Unlocking-System" role="button">Check out code on Github</a>
+                </div>
+                <div class="col-sm-6">
+                    <img src="{% static 'mysite/images/iot_research.png' %}" width="500px" height="600px">
+                    <h6>Fig.-Basic Control Flow Diagram for Smart door unlocking system</h6>
+                </div>
+            </div>
+    </div>
+    </div>
+
+
+
+
+{% endblock %}
